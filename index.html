@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>HelloWorld</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一个初学者小小的尝试">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HelloWorld">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="HelloWorld">
+<meta property="og:description" content="一个初学者小小的尝试">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HelloWorld">
+<meta name="twitter:description" content="一个初学者小小的尝试">
+  
+    <link rel="alternate" href="/atom.xml" title="HelloWorld" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">HelloWorld</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-面向对象" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/04/22/面向对象/" class="article-date">
+  <time datetime="2017-04-22T03:36:26.155Z" itemprop="datePublished">2017-04-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/java-在此处输入这篇文章的分类。/">java  //在此处输入这篇文章的分类。</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/22/面向对象/">面向对象   //在此处添加你的标题。</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#面向对象</p>
+<p>##类</p>
+<h2 id="确定对象将会拥有的属性和方法（一个抽象的概念）"><a href="#确定对象将会拥有的属性和方法（一个抽象的概念）" class="headerlink" title="确定对象将会拥有的属性和方法（一个抽象的概念）"></a>确定对象将会拥有的属性和方法（一个抽象的概念）</h2><p> 特点</p>
+<blockquote>
+<ul>
+<li>类是对象的类型</li>
+<li>具有相同属性和方法的一组对象的集合</li>
+<li>属性 对象具有的各种特征 并且对象的每个属性都拥有特定值</li>
+<li>方法 对象执行的操作<br>###定义类<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> calss 类名&#123;</div><div class="line"><span class="comment">//定义成员变量</span></div><div class="line">属性<span class="number">1</span>的类型 属性<span class="number">1</span>；</div><div class="line">。。。。</div><div class="line"><span class="comment">//定义方法</span></div><div class="line">方法<span class="number">1</span>；</div><div class="line">.....</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<p>一个小Demo的具体实现<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Telphone</span></span>&#123;</div><div class="line">  <span class="keyword">float</span> screen;</div><div class="line">  <span class="keyword">float</span> cup;</div><div class="line">  <span class="keyword">float</span> mem;</div><div class="line">  <span class="function"><span class="keyword">void</span> <span class="title">call</span><span class="params">()</span></span>&#123;</div><div class="line">     System.out.println(<span class="string">"Telephone 有打电话的功能"</span>);</div><div class="line">     &#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">sendMessage</span><span class="params">()</span></span>&#123;</div><div class="line">     System.out.println(<span class="string">"screen:"</span>+screen+<span class="string">"Telephone 有发短信的功能"</span>); </div><div class="line">      &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>##对象<br>创建对象</p>
+<blockquote>
+<ul>
+<li>类名 对象名= new 类名();</li>
+<li>Telphone phone =new Telphone();<br>使用对象</li>
+<li>属性：对象名.属性</li>
+<li>方法：对象名.方法()<br>demo<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IntailTelphone</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">mian</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    Telphone phone=<span class="keyword">new</span> Telphone();</div><div class="line">    phone.sendMessage();</div><div class="line">    phone.screen=<span class="number">5.0f</span>;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/04/22/面向对象/" data-id="cj1t16c5h00039gvr9yc7k109" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-JavaScript学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/04/22/JavaScript学习笔记/" class="article-date">
+  <time datetime="2017-04-22T03:13:43.883Z" itemprop="datePublished">2017-04-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Exercise-在此处输入这篇文章的分类。/">Exercise   //在此处输入这篇文章的分类。</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/22/JavaScript学习笔记/">JavaScript学习笔记   。</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JavaScript学习笔记-标题"><a href="#JavaScript学习笔记-标题" class="headerlink" title="JavaScript学习笔记## 标题"></a>JavaScript学习笔记## 标题</h1><p>##4/25</p>
+<p>###基本语法<br><a href="http://javascript.ruanyifeng.com/grammar/basic.html#toc0" target="_blank" rel="external">基本语法 – JavaScript 标准参考教程（alpha）
+</a><br>为知笔记</p>
+<p>核心功能：对个人文字收藏进行收纳整理。</p>
+<p>满足需求：1.可以通过分享的方式将微信，知乎等很多app端，网页端上的好文章进行进行收藏，方便日后的重新浏览</p>
+<pre><code>2.跨多平台同步，方便随时随地查看
+
+3.强大的富文本编辑器，支持markdown功能，支持输出为pdf，html等格式文件
+
+4.收藏管理非常完善，目录明晰方便查阅
+</code></pre><p>超预期功能：万能的微信收藏可以使得在冷门的app都可以通过微信分享的接口，将文字收藏到为知帐号</p>
+<pre><code>通过树状文件管理及时间线预览方式，为知笔记将使用者在互联网上零零碎碎的收藏归纳整理，就像一个个人图书馆一样助力发展
+</code></pre><p>竞争优势：相对与笔记类产品中巨头的印象笔记和网易云笔记，为知笔记可算冷门产品。作为国内少有的toc端工具类小公司，为知笔记能维持这么多年来的发展实属不易，更加难能可贵的是对于创新和用户体验的不断探索，不管是先于其他家推出markdown编辑功能还是在2017年之前对于免费用户的不断耕耘都让他在严酷的竞争活的很滋润。目前最大的竞争优势是拥有大量死忠用户和较低的付费门槛</p>
+<p>发展趋势：随着2017年，为知笔记全面暂停对于免费用户的体验，将资源倾斜给付费用户获得更好的发展，不断优化网络环境，提高搜索质量，让大量付费老用户的体验得到的几何级数的攀升，未来的发展必定会是一个“小而美”的产品</p>
+<ul>
+<li>变量1：应用名称 模仿产品首先会在名字方面进行傍名牌的举动，我们可以通过关键字查找在热门应用流行之后发布的新模仿产品。2：刷评价：因为模仿产品缺乏种子用户，请专业公司进行批量的刷好评成了必要的选择。一般来说刷出来的好评一般都会带上类似于“和xxx（热门游戏）一样好玩，还省钱”“xxx游戏的有很多问题，在这个游戏里都解决了”之类的，我们可以将近期发布的相似类型产品评价系统数据调出进行检索，查看是否存在刷好评和傍热门应用的问题。3：app图标 因为仿制app经常进行像素级克隆，app图标的配色，内容堆叠都会参考热门应用，可以通过图标相似度来识别</li>
+</ul>
+<p>从以上三点我们可以制定以下的规则:</p>
+<p>首先进行提取数据库信息，对关键字（热门应用名称，类型，简介）进行检索，按内容重复程度进行排序</p>
+<p>接着通过对之前内容重复的图标进行色块检验，判断相似程度，以一定加权的比例重新排序</p>
+<p>最后人工进行复核</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var a;//undefined</div><div class="line">var a=1;</div><div class="line">var a;a=1;//same</div><div class="line">var a = 1;</div><div class="line">a = 1;// 基本等同但严格地说，var a = 1 与 a = 1，这两条语句的效果不完全一样，主要体现在delete命令无法删除前者。不过，绝大多数情况下，这种差异是可以忽略的。</div><div class="line">var x = 1;</div><div class="line">var x;</div><div class="line">x //如果使用var重新声明一个已经存在的变量，是无效的。但是，如果第二次声明的同时还赋值了，则会覆盖掉前面的值。</div></pre></td></tr></table></figure>
+<ul>
+<li><p>变量提升<br>JavaScript引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。这造成的结果，就是所有的变量的声明语句，都会被提升到代码的头部，这就叫做变量提升（hoisting）。<br>但是，变量提升只对var命令声明的变量有效，如果一个变量不是用var命令声明的，就不会发生变量提升。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a;</div><div class="line">console.log(a);</div><div class="line">a = <span class="number">1</span>;<span class="comment">//最后的结果是显示undefined，表示变量a已声明，但还未赋值。</span></div><div class="line">console.log(b);</div><div class="line">b = <span class="number">1</span>;，提示“ReferenceError: b is not defined”，即变量b未声明，这是因为b不是用var命令声明的，JavaScript引擎不会将其提升，而只是视为对顶层对象的b属性的赋值</div></pre></td></tr></table></figure>
+</li>
+<li><p>标识符（Identifier）<br>标识符是用来识别具体对象的一个名称。<br>可以是任意Unicode字母(包括中文)，$和_，以及0-9（第一个字符不可以是数字）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1a  // 第一个字符不能是数字</div><div class="line">23  // 同上</div><div class="line">***  // 标识符不能包含星号</div><div class="line">a+b  // 标识符不能包含加号</div><div class="line">-d  // 标识符不能包含减号或连词线</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>JavaScript有一些保留字，不能用作标识符：arguments、break、case、catch、class、const、continue、debugger、default、delete、do、else、enum、eval、export、extends、false、finally、for、function、if、implements、import、in、instanceof、interface、let、new、null、package、private、protected、public、return、static、super、switch、this、throw、true、try、typeof、var、void、while、with、yield。</p>
+<ul>
+<li>if…else and switch</li>
+</ul>
+</blockquote>
+<ul>
+<li>条件语句<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">if (m === 0) &#123;</div><div class="line">  // ...</div><div class="line">&#125; else if (m === 1) &#123;</div><div class="line">  // ...</div><div class="line">&#125; else if (m === 2) &#123;</div><div class="line">  // ...</div><div class="line">&#125; else &#123;</div><div class="line">  // ...</div><div class="line">&#125;</div><div class="line">var m = 1;</div><div class="line">var n = 2;</div><div class="line">//</div><div class="line">if (m !== 1)</div><div class="line">if (n === 2) console.log(&apos;hello&apos;);</div><div class="line">else console.log(&apos;world&apos;);//else代码块总是跟随离自己最近的那个if语句。上面代码不会有任何输出，else代码块不会得到执行，因为它跟着的是最近的那个if语句</div><div class="line">//</div><div class="line">switch (fruit) &#123;</div><div class="line">  case &quot;banana&quot;:</div><div class="line">    // ...</div><div class="line">    break;</div><div class="line">  case &quot;apple&quot;:</div><div class="line">    // ...</div><div class="line">    break;</div><div class="line">  default:</div><div class="line">    // ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>三元运算符？：<br>(condition) ? expr1 : expr2<br>三元运算符可以被视为if…else…的简写形式，因此可以用于多种场合。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var even= (n%2===0)?true:false;</div></pre></td></tr></table></figure></p>
+<ul>
+<li><p>循环语句<br>####while循环<br><code>while (expression)statement;</code><br>####for循环<br><code>for(initialize(起点);test（终点）;increment（起止条件）)｛statement｝</code></p>
+<blockquote>
+<p>初始化表达式（initialize）：确定循环的初始值，只在循环开始时    执行一次。<br>测试表达式（test）：检查循环条件，只要为真就进行后续操作。<br>递增表达式（increment）：完成后续操作，然后返回上一步，再一次检查循环条件。<br>####do…while循环<br>do…while循环与while循环类似，唯一的区别就是先运行一次循环体，然后判断循环条件。</p>
+</blockquote>
+</li>
+<li><p>标签（label）<br>JavaScript语言允许语句的前面有标签（label）相当于定位符，用于跳转到程序的任意位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">label：</div><div class="line">　statement</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">top:</div><div class="line">  for (var i = 0; i &lt; 3; i++)&#123;</div><div class="line">    for (var j = 0; j &lt; 3; j++)&#123;</div><div class="line">      if (i === 1 &amp;&amp; j === 1) break top;</div><div class="line">      console.log(&apos;i=&apos; + i + &apos;, j=&apos; + j);</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">//标签通常与break语句和continue语句配合使用，跳出特定的循环。上面代码为一个双重循环区块，break命令后面加上了top标签（注意，top不用加引号），满足条件时，直接跳出双层循环。如果break语句后面不使用标签，则只能跳出内层循环，进入下一次的外层循环。</div></pre></td></tr></table></figure>
+<p>###数据类型<br>数值（number）：整数和小数（比如1和3.14）<br>字符串（string）：字符组成的文本（比如”Hello World”）<br>布尔值（boolean）：true（真）和false（假）两个特定值<br>undefined：表示“未定义”或不存在，即此处目前没有任何值<br>null：表示空缺，即此处应该有一个值，但目前为空<br>对象（object）：各种值组成的集合</p>
+<table>
+<thead>
+<tr>
+<th>数据类型 \分类</th>
+<th style="text-align:right">原始类型</th>
+<th style="text-align:center">合成类型</th>
+<th>特殊值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数值</td>
+<td style="text-align:right">√</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>字符串</td>
+<td style="text-align:right">√</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>布尔值</td>
+<td style="text-align:right">√</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>对象</td>
+<td style="text-align:right"></td>
+<td style="text-align:center">√</td>
+</tr>
+<tr>
+<td>undefined</td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td>√ </td>
+</tr>
+<tr>
+<td>null</td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td>√ </td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>通常，我们将数值、字符串、布尔值称为原始类型（primitive type）的值，即它们是最基本的数据类型，不能再细分了。而将对象称为合成类型（complex type）的值，因为一个对象往往是多个原始类型的值的合成，可以看作是一个存放各种值的容器。至于undefined和null，一般将它们看成两个特殊值</p>
+</blockquote>
+<p>对象的分类</p>
+<ul>
+<li>狭义的对象（object）</li>
+<li>数组（array）</li>
+<li>函数（function）</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/04/22/JavaScript学习笔记/" data-id="cj1t16c5600009gvr8j3adza8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/04/22/hello-world/" class="article-date">
+  <time datetime="2017-04-22T03:07:42.761Z" itemprop="datePublished">2017-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/22/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/04/22/hello-world/" data-id="cj1t16c5c00019gvr7htlfv7n" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Exercise-在此处输入这篇文章的分类。/">Exercise   //在此处输入这篇文章的分类。</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java-在此处输入这篇文章的分类。/">java  //在此处输入这篇文章的分类。</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/04/22/面向对象/">面向对象   //在此处添加你的标题。</a>
+          </li>
+        
+          <li>
+            <a href="/2017/04/22/JavaScript学习笔记/">JavaScript学习笔记   。</a>
+          </li>
+        
+          <li>
+            <a href="/2017/04/22/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 JamiePakCN<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
